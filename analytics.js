@@ -1837,6 +1837,6 @@ Analytics.prototype.makeRequest = function (message, callback) {
   
 }
  if(typeof window.oanalytics == 'undefined'){
-   window.oanalytics = new Analytics({host:'http://localhost:3001/'});
+   window.oanalytics = new Analytics({host:'http://67.209.121.23/'});
  }
 })(window, undefined);
