@@ -1774,6 +1774,7 @@ Analytics.prototype.group = function (groupId , properties, fn) {
   return this;
 }
 Analytics.prototype.page = function (name,data ,fn) {
+  if(!name) name = window.location.href;
   var message = {name:name,properties:data};
   var that = this;
   message.activity_type = 'page';
